@@ -1,7 +1,9 @@
 #include <array>
 #include <iostream>
 
-void print_array(auto array) {
+
+template<typename T> 
+void print_array(T array) {
     for (auto value : array) {
         std::cout << value << ' ';
     }
@@ -10,9 +12,10 @@ void print_array(auto array) {
 
 int main() {
     std::array<int, 3> my_int_array = {1, 2, 3};
-    print_array(my_int_array);
+    print_array<std::array<int,3>>(my_int_array);
 
-    std::array<float, 3> my_float_array = {1.1f, 2.2f, 3.3f};
-    print_array(my_float_array);
+    std::array<float, 4> my_float_array = {1.1f, 2.2f, 3.3f, 22.5f};
+    print_array<std::array<float,4>>(my_float_array);
+
     return 0;
 }

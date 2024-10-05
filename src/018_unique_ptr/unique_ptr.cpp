@@ -10,3 +10,5 @@ int main() {
     std::cout << ptr[9] << '\n';
     return 0;
 }
+
+

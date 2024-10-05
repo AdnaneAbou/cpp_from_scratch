@@ -8,5 +8,6 @@ int main() {
     auto ptr2 = std::move(ptr1);
     std::cout << "ptr1 after move: " << ptr1.get() << '\n';
     std::cout << "ptr2 after move: " << ptr2.get() << '\n';
+    
     return 0;
 }

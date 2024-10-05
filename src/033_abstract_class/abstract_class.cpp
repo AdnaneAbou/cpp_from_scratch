@@ -21,7 +21,6 @@ int main() {
     d.speak();
     Cat c;
     c.speak();
-    
     Animal &a1 = d;
     a1.speak();
     Animal &a2 = c;

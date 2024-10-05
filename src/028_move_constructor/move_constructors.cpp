@@ -9,7 +9,7 @@ struct S {
     S(const S &s) {
         std::cout << "Copy Constructor!\n";
     }
-    S(S &&s) {
+    S(S &&s){
         std::cout << "Move Constructor!\n";
     }
 };

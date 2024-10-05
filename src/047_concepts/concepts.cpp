@@ -6,6 +6,6 @@ void print(std::integral auto value) {
 }
 
 int main() {
-    print(10.352);
+    print(10352);
     return 0;
 }

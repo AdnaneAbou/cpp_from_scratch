@@ -6,7 +6,10 @@ int main() {
     *b += 1;
 
     std::cout << "a = " << a << '\n';
+    std::cout << "&a = " << &a << '\n';
     std::cout << "b = " << b << '\n';
+    std::cout << "&(*b)  = " << &(*b) << '\n';
+    std::cout << "&b = " << &b << '\n';
 
     return 0;
 }

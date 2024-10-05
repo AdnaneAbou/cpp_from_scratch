@@ -7,10 +7,9 @@ void print_array(auto array) {
     }
     std::cout << '\n';
 }
-
 template<>
 void print_array(std::array<int, 3> array) {
-    std::cout << "Printing from our specialization!\n";
+    std::cout << "Printing from our specialization! yaaay \n";
 }
 
 int main() {

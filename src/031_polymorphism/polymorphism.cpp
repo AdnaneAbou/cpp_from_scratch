@@ -28,5 +28,7 @@ int main() {
     a1.speak();
     Animal &a2 = c;
     a2.speak();
+    d.speak();
+
     return 0;
 }

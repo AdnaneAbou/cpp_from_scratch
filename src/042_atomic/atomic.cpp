@@ -12,8 +12,10 @@ int main() {
 
     std::thread t1(work);
     std::thread t2(work);
+    std::thread t3(work);
     t1.join();
     t2.join();
+    t3.join();
 
     std::cout << counter << '\n';
     return 0;

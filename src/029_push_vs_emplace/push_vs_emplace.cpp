@@ -18,6 +18,8 @@ struct S {
 
 int main() {
     std::vector<S> my_vector;
-    my_vector.emplace_back(10);
+    S s(10);
+    my_vector.push_back(s);
+    // my_vector.emplace_back(10);
     return 0;
 }
