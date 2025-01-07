@@ -11,6 +11,7 @@ void print(std::vector<int> vector) {
 int main() {
     std::vector<int> my_vector;
     my_vector.reserve(10);
+    std::cout << "The size of the array " << sizeof(my_vector)<< std::endl ;
     for(int i = 0; i < 10; i+=1) {
         std::cout << "Size: " << my_vector.size() << '\n';
         std::cout << "Capacity: " << my_vector.capacity() << '\n';
