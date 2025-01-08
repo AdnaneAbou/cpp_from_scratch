@@ -10,8 +10,8 @@ void print(auto vecotr){
 
 int main(){
     std::vector<int> my_vector;
+    my_vector.reserve(8);
     for(int i=0; i<10;i += 1){
-        my_vector.reserve(8);
         my_vector.push_back(i);
         std::cout << "Memory address of front : "<< &(my_vector.at(0)) <<"\n";
         std::cout << "Size : "<<my_vector.size() << "\n";
