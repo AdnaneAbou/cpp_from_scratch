@@ -15,6 +15,7 @@ int main() {
     for(int i = 0; i < 17; i+=1) {
         std::cout << "Size: " << my_vector.size() << " Capacity: " << my_vector.capacity() << '\n';
         my_vector.push_back(i);
+        // Pushback doesn't accept inplace object creation inside the vector , it creates the object then moves
     }
     return 0;
 }
