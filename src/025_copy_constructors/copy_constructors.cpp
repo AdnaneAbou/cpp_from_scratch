@@ -14,13 +14,24 @@ struct Point {
 
     }
 };
+class MyClass {
+public:
+    MyClass(int x) { /* ... */ }
+};
+
+void doSomething(MyClass obj) { /* ... */ }
 
 int main(){
+
+    doSomething(42); // ERROR! Compiler won't automatically convert 42 to MyClass. ' explicit Myclass(int x){}'
+    doSomething(MyClass(42)); // OK, you explicitly create a MyClass object.
+
     Point p1(10,20);
     Point p2(102,20);
     p2.print();
     p1.print();
     Point p3 = p1;
     p3.print();
+    
     return 0;
 }
