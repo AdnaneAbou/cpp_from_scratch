@@ -5,7 +5,7 @@
 int main() {
     std::atomic<int> counter = 0;
     auto work = [&counter](){
-        for(int i = 0; i < 10000; i += 1) {
+        for(int i = 0; i < 300000; i += 1) {
             counter += 1;
         }
     };
