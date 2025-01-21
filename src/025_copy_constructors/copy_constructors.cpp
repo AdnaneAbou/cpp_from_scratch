@@ -17,13 +17,17 @@ struct Point {
 class MyClass {
 public:
     MyClass(int x) { /* ... */ }
+    // explicit MyClass(int x) { /* ... */ }
 };
 
 void doSomething(MyClass obj) { /* ... */ }
 
 int main(){
 
-    doSomething(42); // ERROR! Compiler won't automatically convert 42 to MyClass. ' explicit Myclass(int x){}'
+    // ERROR! Compiler won't automatically convert 42 to MyClass.
+    //  ' explicit Myclass(int x){}'
+    doSomething(42); 
+
     doSomething(MyClass(42)); // OK, you explicitly create a MyClass object.
 
     Point p1(10,20);
